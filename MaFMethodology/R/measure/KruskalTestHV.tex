@@ -1,0 +1,76 @@
+%experiment/MaFMethodology/R/measure/KruskalTestHV.tex
+\documentclass[]{article}
+\usepackage{colortbl}
+\usepackage[table*]{xcolor}
+\usepackage{multirow}
+\usepackage{fixltx2e}
+\usepackage{stfloats}
+\usepackage{psfrag}
+\usepackage[]{threeparttable}
+\usepackage{multicol}
+\usepackage{lscape}
+\xdefinecolor{gray95}{gray}{0.75}
+\begin{document}
+\begin{table}
+\caption{HV. Mean and standard deviation}
+\label{table:mean.HV}
+\centering
+\begin{footnotesize}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Obj. & problem  & HHCOR2 & HHCOEpsilon \\ \hline
+
+\multirow{15}{*}{5} & MaF01 & \cellcolor{gray95} {\bf 6.67E-1(1.2E-2)} & 6.56E-1(1.82E-2)\\
+ & MaF02 & \cellcolor{gray95} {\bf 1.1E0(3.7E-3)} & \cellcolor{gray95} 1.1E0(4.42E-3)\\
+ & MaF03 & \cellcolor{gray95} {\bf 1.4E0(5.31E-1)} & 9.98E-1(7.81E-1)\\
+ & MaF04 & \cellcolor{gray95} {\bf 3.32E-1(8.55E-3)} & 3.25E-1(1.11E-2)\\
+ & MaF05 & \cellcolor{gray95} {\bf 1.44E0(8.42E-3)} & \cellcolor{gray95} 1.43E0(4.39E-2)\\
+ & MaF06 & \cellcolor{gray95} 1.19E0(6E-4) & \cellcolor{gray95} {\bf 1.19E0(6.48E-4)}\\
+ & MaF07 & \cellcolor{gray95} {\bf 8.72E-1(5.41E-3)} & \cellcolor{gray95} 8.6E-1(2.26E-2)\\
+ & MaF08 & \cellcolor{gray95} 6.71E-1(3.59E-3) & \cellcolor{gray95} {\bf 6.72E-1(3.49E-3)}\\
+ & MaF09 & \cellcolor{gray95} {\bf 1.1E0(1.85E-3)} & \cellcolor{gray95} 1.1E0(3.66E-3)\\
+ & MaF10 & \cellcolor{gray95} {\bf 1.54E0(4.92E-2)} & 1.44E0(1.24E-1)\\
+ & MaF11 & \cellcolor{gray95} {\bf 1.61E0(5.81E-4)} & 1.61E0(1.87E-3)\\
+ & MaF12 & \cellcolor{gray95} {\bf 1.39E0(3.83E-2)} & \cellcolor{gray95} 1.38E0(2.16E-2)\\
+ & MaF13 & \cellcolor{gray95} {\bf 1.24E0(2.61E-3)} & \cellcolor{gray95} 1.24E0(3.88E-3)\\
+ & MaF14 & \cellcolor{gray95} {\bf 1.52E0(2.09E-2)} & \cellcolor{gray95} 1.21E0(6.22E-1)\\
+ & MaF15 & \cellcolor{gray95} {\bf 8.54E-1(2.67E-2)} & 7.89E-1(1.34E-1)\\
+\hline
+
+\multirow{15}{*}{10} & MaF01 & \cellcolor{gray95} {\bf 1.21E-1(3.68E-3)} & 1.14E-1(7.14E-3)\\
+ & MaF02 & \cellcolor{gray95} {\bf 1.62E0(4.49E-2)} & \cellcolor{gray95} 1.59E0(5.73E-2)\\
+ & MaF03 & \cellcolor{gray95} {\bf 2.46E0(5.8E-1)} & 9.09E-1(1.27E0)\\
+ & MaF04 & \cellcolor{gray95} {\bf 5.25E-4(1.7E-4)} & 3.38E-4(1.94E-4)\\
+ & MaF05 & \cellcolor{gray95} {\bf 6.79E-1(4.75E-1)} & \cellcolor{gray95} 4.15E-1(3.56E-1)\\
+ & MaF06 & \cellcolor{gray95} {\bf 1.81E0(1.72E-2)} & 1.52E0(6.05E-1)\\
+ & MaF07 & \cellcolor{gray95} {\bf 1.01E0(4.73E-2)} & 9E-1(1.74E-1)\\
+ & MaF08 & \cellcolor{gray95} {\bf 2.94E-1(1.01E-3)} & \cellcolor{gray95} 2.94E-1(1.23E-3)\\
+ & MaF09 & \cellcolor{gray95} {\bf 4.62E-1(7.57E-3)} & 3.81E-1(1.22E-1)\\
+ & MaF10 & \cellcolor{gray95} {\bf 2.38E0(1.35E-1)} & 1.95E0(4.62E-1)\\
+ & MaF11 & \cellcolor{gray95} {\bf 2.59E0(1.63E-3)} & \cellcolor{gray95} 2.59E0(4.45E-3)\\
+ & MaF12 & \cellcolor{gray95} {\bf 2.06E0(6.17E-2)} & \cellcolor{gray95} 2.01E0(1.29E-1)\\
+ & MaF13 & \cellcolor{gray95} {\bf 1.36E0(1.67E-2)} & \cellcolor{gray95} 1.35E0(1.19E-2)\\
+ & MaF14 & \cellcolor{gray95} {\bf 2.35E0(1.83E-1)} & \cellcolor{gray95} 1.87E0(9.67E-1)\\
+ & MaF15 & \cellcolor{gray95} 6.7E-2(3.04E-2) & \cellcolor{gray95} {\bf 7.3E-2(5.77E-2)}\\
+\hline
+
+\multirow{15}{*}{15} & MaF01 & \cellcolor{gray95} {\bf 2.04E-2(9.38E-4)} & \cellcolor{gray95} 2E-2(1.45E-3)\\
+ & MaF02 & \cellcolor{gray95} {\bf 2.82E0(1.9E-2)} & 2.78E0(6.71E-2)\\
+ & MaF03 & \cellcolor{gray95} {\bf 3.76E0(1.29E0)} & \cellcolor{gray95} 2.47E0(2.07E0)\\
+ & MaF04 & \cellcolor{gray95} {\bf 1.04E-6(2.3E-6)} & \cellcolor{gray95} 0E0(0E0)\\
+ & MaF05 & \cellcolor{gray95} {\bf 2.83E0(1.9E-1)} & \cellcolor{gray95} 2.22E0(1.15E0)\\
+ & MaF06 & \cellcolor{gray95} {\bf 2.88E0(3.67E-3)} & \cellcolor{gray95} 2.3E0(1.18E0)\\
+ & MaF07 & \cellcolor{gray95} {\bf 7.56E-1(2.11E-1)} & \cellcolor{gray95} 7.26E-1(2.37E-1)\\
+ & MaF08 & \cellcolor{gray95} {\bf 1.03E-1(7.91E-4)} & \cellcolor{gray95} 8.74E-2(3.77E-2)\\
+ & MaF09 & \cellcolor{gray95} 1.87E-1(1.1E-2) & \cellcolor{gray95} {\bf 1.9E-1(6.83E-3)}\\
+ & MaF10 & \cellcolor{gray95} {\bf 4.18E0(1.29E-6)} & 3.88E0(8.11E-1)\\
+ & MaF11 & \cellcolor{gray95} {\bf 4.18E0(4.95E-4)} & 4.16E0(3.17E-2)\\
+ & MaF12 & \cellcolor{gray95} {\bf 3.46E0(2.04E-1)} & \cellcolor{gray95} 3.37E0(1.99E-1)\\
+ & MaF13 & \cellcolor{gray95} {\bf 1.71E0(3.67E-2)} & \cellcolor{gray95} 1.7E0(3.77E-2)\\
+ & MaF14 & \cellcolor{gray95} {\bf 3.68E0(5.04E-1)} & \cellcolor{gray95} 2.76E0(1.68E0)\\
+ & MaF15 & \cellcolor{gray95} {\bf 8.99E-3(4.08E-3)} & 4.85E-3(4.94E-3)\\
+\hline
+\end{tabular}
+\end{footnotesize}
+\end{table}
+\end{document}

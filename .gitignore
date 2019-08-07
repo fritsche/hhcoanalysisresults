@@ -1,4 +1,13 @@
 
+# analysis partial results
+
+HV.bin
+IGD.bin
+HV.tex
+IGD.tex
+*.R
+*.pdf
+
 # partial results 
 *.tsv.HV
 *.tsv.IGD
