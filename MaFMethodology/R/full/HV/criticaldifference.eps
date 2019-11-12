@@ -1,0 +1,394 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%DocumentNeededResources: font NimbusSanL-Regu
+%%+ font NimbusSanL-Bold
+%%+ font NimbusSanL-ReguItal
+%%+ font NimbusSanL-BoldItal
+%%+ font StandardSymL
+%%Title: R Graphics Output
+%%Creator: R Software
+%%Pages: (atend)
+%%BoundingBox: 0 0 1008 360
+%%EndComments
+%%BeginProlog
+/bp  { gs sRGB gs } def
+% begin .ps.prolog
+/gs  { gsave } bind def
+/gr  { grestore } bind def
+/ep  { showpage gr gr } bind def
+/m   { moveto } bind def
+/l  { rlineto } bind def
+/np  { newpath } bind def
+/cp  { closepath } bind def
+/f   { fill } bind def
+/o   { stroke } bind def
+/c   { newpath 0 360 arc } bind def
+/r   { 4 2 roll moveto 1 copy 3 -1 roll exch 0 exch rlineto 0 rlineto -1 mul 0 exch rlineto closepath } bind def
+/p1  { stroke } bind def
+/p2  { gsave bg fill grestore newpath } bind def
+/p3  { gsave bg fill grestore stroke } bind def
+/p6  { gsave bg eofill grestore newpath } bind def
+/p7  { gsave bg eofill grestore stroke } bind def
+/t   { 5 -2 roll moveto gsave rotate
+       1 index stringwidth pop
+       mul neg 0 rmoveto show grestore } bind def
+/ta  { 4 -2 roll moveto gsave rotate show } bind def
+/tb  { 2 -1 roll 0 rmoveto show } bind def
+/cl  { grestore gsave newpath 3 index 3 index moveto 1 index
+       4 -1 roll lineto  exch 1 index lineto lineto
+       closepath clip newpath } bind def
+/rgb { setrgbcolor } bind def
+/s   { scalefont setfont } bind def
+% end   .ps.prolog
+/sRGB { [ /CIEBasedABC
+          << /DecodeLMN
+               [ { dup 0.03928 le
+                        {12.92321 div}
+                        {0.055 add 1.055 div 2.4 exp }
+                     ifelse
+                 } bind dup dup
+               ]
+             /MatrixLMN [0.412457 0.212673 0.019334
+                         0.357576 0.715152 0.119192
+                         0.180437 0.072175 0.950301]
+             /WhitePoint [0.9505 1.0 1.0890]
+           >>
+         ] setcolorspace } bind def
+/srgb { setcolor } bind def
+% begin encoding
+/TeXtextEncoding [
+ /minus /Delta /Theta /Lambda /Xi /Pi /Sigma /Upsilon
+ /Phi /Psi /Omega /ff /fi /fl /ffi /ffl
+ /dotlessi /dotlessj /grave /acute /caron /breve /macron /ring
+ /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash
+ /space /exclam /quotedblright /numbersign /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus /comma /minus /period /slash
+ /zero /one /two /three /four /five /six /seven
+ /eight /nine /colon /semicolon /exclamdown /equal /questiondown /question
+ /at /A /B /C /D /E /F /G
+ /H /I /J /K /L /M /N /O
+ /P /Q /R /S /T /U /V /W
+ /X /Y /Z /bracketleft /quotedblleft /bracketright /circumflex /dotaccent
+ /quoteleft /a /b /c /d /e /f /g
+ /h /i /j /k /l /m /n /o
+ /p /q /r /s /t /u /v /w
+ /x /y /z /endash /emdash /hungarumlaut /tilde /dieresis
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+]
+ def
+% end encoding
+%%IncludeResource: font NimbusSanL-Regu
+/NimbusSanL-Regu findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding TeXtextEncoding def
+  currentdict
+  end
+/Font1 exch definefont pop
+%%IncludeResource: font NimbusSanL-Bold
+/NimbusSanL-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding TeXtextEncoding def
+  currentdict
+  end
+/Font2 exch definefont pop
+%%IncludeResource: font NimbusSanL-ReguItal
+/NimbusSanL-ReguItal findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding TeXtextEncoding def
+  currentdict
+  end
+/Font3 exch definefont pop
+%%IncludeResource: font NimbusSanL-BoldItal
+/NimbusSanL-BoldItal findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding TeXtextEncoding def
+  currentdict
+  end
+/Font4 exch definefont pop
+%%IncludeResource: font StandardSymL
+/StandardSymL findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+  end
+/Font5 exch definefont pop
+%%EndProlog
+%%Page: 1 1
+bp
+0.00 0.00 1008.00 360.00 cl
+0.00 0.00 1008.00 360.00 cl
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+131.04 281.31 m
+745.92 0 l
+o
+np
+131.04 281.31 m
+0 6.53 l
+o
+/Font1 findfont 9 s
+131.04 297.72 (4) .5 0 t
+np
+224.28 281.31 m
+0 6.53 l
+o
+224.28 297.83 (5) .5 0 t
+np
+317.52 281.31 m
+0 6.53 l
+o
+317.52 297.83 (6) .5 0 t
+np
+410.76 281.31 m
+0 6.53 l
+o
+410.76 297.72 (7) .5 0 t
+np
+504.00 281.31 m
+0 6.53 l
+o
+504.00 297.83 (8) .5 0 t
+np
+597.24 281.31 m
+0 6.53 l
+o
+597.24 297.83 (9) .5 0 t
+np
+690.48 281.31 m
+0 6.53 l
+o
+685.48 297.83 (1) 0 ta
+-0.558 (0) tb gr
+np
+783.72 281.31 m
+0 6.53 l
+o
+778.72 297.72 (1) 0 ta
+-1.062 (1) tb gr
+np
+876.96 281.31 m
+0 6.53 l
+o
+871.96 297.72 (1) 0 ta
+-0.621 (2) tb gr
+np
+131.04 327.06 m
+321.80 0 l
+o
+291.94 336.90 (CD) .5 0 t
+np
+131.04 325.42 m
+0 3.27 l
+o
+np
+452.84 325.42 m
+0 3.27 l
+o
+107.73 199.64 (SPEA2SDE) 1 0 t
+np
+113.56 202.88 m
+71.35 0 l
+o
+np
+184.91 202.88 m
+0 78.43 l
+o
+107.73 173.50 (MOEAD) 1 0 t
+np
+113.56 176.73 m
+251.62 0 l
+o
+np
+365.18 176.73 m
+0 104.58 l
+o
+107.73 147.36 (NSGAIII) 1 0 t
+np
+113.56 150.59 m
+267.16 0 l
+o
+np
+380.72 150.59 m
+0 130.72 l
+o
+66.21 121.27 (The) 0 ta
+-0.090 (t) tb
+-0.009 (aDEA) tb gr
+np
+113.56 124.44 m
+287.88 0 l
+o
+np
+401.44 124.44 m
+0 156.87 l
+o
+107.73 95.02 (HHLA) 1 0 t
+np
+113.56 98.30 m
+307.56 0 l
+o
+np
+421.12 98.30 m
+0 183.01 l
+o
+107.73 68.93 (MOMBI2) 1 0 t
+np
+113.56 72.16 m
+340.71 0 l
+o
+np
+454.27 72.16 m
+0 209.15 l
+o
+107.73 43.71 (HypE) 1 0 t
+np
+113.56 46.01 m
+379.04 0 l
+o
+np
+492.60 46.01 m
+0 235.30 l
+o
+107.73 16.64 (NSGAII) 1 0 t
+np
+113.56 19.87 m
+398.73 0 l
+o
+np
+512.29 19.87 m
+0 261.44 l
+o
+900.27 199.64 (MOEADD) 0 0 t
+np
+894.44 202.88 m
+-355.22 0 l
+o
+np
+539.22 202.88 m
+0 78.43 l
+o
+900.27 173.50 (HHC) 0 ta
+-0.072 (OR) tb
+-0.135 (andomSDE) tb gr
+np
+894.44 176.73 m
+-307.56 0 l
+o
+np
+586.88 176.73 m
+0 104.58 l
+o
+900.27 147.36 (SPEA2) 0 0 t
+np
+894.44 150.59 m
+-226.75 0 l
+o
+np
+667.69 150.59 m
+0 130.72 l
+o
+900.27 121.21 (HHC) 0 ta
+-0.072 (OR2SDE) tb gr
+np
+894.44 124.44 m
+-203.96 0 l
+o
+np
+690.48 124.44 m
+0 156.87 l
+o
+900.27 95.07 (HHC) 0 ta
+-0.072 (OR) tb
+-0.135 (andomLPNORM) tb gr
+np
+894.44 98.30 m
+-198.78 0 l
+o
+np
+695.66 98.30 m
+0 183.01 l
+o
+900.27 68.93 (HHC) 0 ta
+-0.072 (OR) tb
+-0.135 (andomMINMAX) tb gr
+np
+894.44 72.16 m
+-154.23 0 l
+o
+np
+740.21 72.16 m
+0 209.15 l
+o
+900.27 42.78 (HHC) 0 ta
+-0.072 (OR2LPNORM) tb gr
+np
+894.44 46.01 m
+-66.17 0 l
+o
+np
+828.27 46.01 m
+0 235.30 l
+o
+900.27 16.64 (HHC) 0 ta
+-0.072 (OR2MINMAX) tb gr
+np
+894.44 19.87 m
+-45.45 0 l
+o
+np
+848.99 19.87 m
+0 261.44 l
+o
+2.25 setlinewidth
+[] 0 setdash
+np
+182.58 257.78 m
+312.35 0 l
+o
+np
+362.84 247.32 m
+307.18 0 l
+o
+np
+378.38 236.86 m
+319.61 0 l
+o
+np
+418.79 226.41 m
+323.75 0 l
+o
+np
+509.96 215.95 m
+320.64 0 l
+o
+np
+536.89 257.78 m
+314.43 0 l
+o
+ep
+%%Trailer
+%%Pages: 1
+%%EOF
