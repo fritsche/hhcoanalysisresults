@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{graphicx}\usepackage{colortbl}
+\usepackage[table*]{xcolor}
+\usepackage{multirow}
+\usepackage{fixltx2e}
+\usepackage{stfloats}
+\usepackage{psfrag}
+\usepackage[]{threeparttable}
+\usepackage{multicol}
+\usepackage{lscape}
+\xdefinecolor{gray95}{gray}{0.75}
+\title{Results}
+\author{}
+\date{\today}
+\begin{document}
+\oddsidemargin 0in \topmargin 0in\maketitle
+\section{Tables of Friedman Tests}
+\begin{table}[!htp]
+\centering
+\caption{Average Rankings of the algorithms
+}\begin{tabular}{|c|c|}
+\hline
+Algorithm&Ranking\\
+\hline
+MOEADD&6.444(2.644)\\\hline
+MOMBI2&5.556(2.452)\\\hline
+NSGAII&6.789(2.245)\\\hline
+HypE&6.611(2.582)\\\hline
+MOEAD&5.467(2.559)\\\hline
+NSGAIII&4.700(2.298)\\\hline
+SPEA2SDE& {\bf 3.411(2.508)}\\\hline
+ThetaDEA&5.078(2.896)\\\hline
+HHCORandomLPNORM&3.478(1.853)\\\hline
+SPEA2&7.467(2.398)\\\hline
+\end{tabular}
+\end{table}
+\end{document}

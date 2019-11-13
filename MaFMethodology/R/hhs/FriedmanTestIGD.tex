@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{graphicx}\usepackage{colortbl}
+\usepackage[table*]{xcolor}
+\usepackage{multirow}
+\usepackage{fixltx2e}
+\usepackage{stfloats}
+\usepackage{psfrag}
+\usepackage[]{threeparttable}
+\usepackage{multicol}
+\usepackage{lscape}
+\xdefinecolor{gray95}{gray}{0.75}
+\title{Results}
+\author{}
+\date{\today}
+\begin{document}
+\oddsidemargin 0in \topmargin 0in\maketitle
+\section{Tables of Friedman Tests}
+\begin{table}[!htp]
+\centering
+\caption{Average Rankings of the algorithms
+}\begin{tabular}{|c|c|}
+\hline
+Algorithm&Ranking\\
+\hline
+HHLA&6.778(0.696)\\\hline
+HHCORandom& {\bf 1.489(0.619)}\\\hline
+HHCORandomMINMAX&4.600(1.272)\\\hline
+HHCOR2MINMAX&4.622(1.121)\\\hline
+HHCORandomLPNORM&4.244(1.232)\\\hline
+HHCOR2&1.800(0.933)\\\hline
+HHCOR2LPNORM&4.467(1.408)\\\hline
+\end{tabular}
+\end{table}
+\end{document}
