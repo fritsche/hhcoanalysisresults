@@ -1,0 +1,76 @@
+%experiment/MaFMethodology/R/cec/KruskalTestIGD.tex
+\documentclass[]{article}
+\usepackage{colortbl}
+\usepackage[table*]{xcolor}
+\usepackage{multirow}
+\usepackage{fixltx2e}
+\usepackage{stfloats}
+\usepackage{psfrag}
+\usepackage[]{threeparttable}
+\usepackage{multicol}
+\usepackage{lscape}
+\xdefinecolor{gray95}{gray}{0.75}
+\begin{document}
+\begin{table}
+\caption{IGD. Mean and standard deviation}
+\label{table:mean.IGD}
+\centering
+\begin{footnotesize}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+Obj. & problem  & AMPDEA & BCEIBEA & CVEA3 & HHCORandomLPNORM \\ \hline
+
+\multirow{15}{*}{5} & MaF01 & 0.00116 & \cellcolor{gray95} {\bf 0.00114} & 0.00119 & 0.00118\\
+ & MaF02 & \cellcolor{gray95} {\bf 0.00629} & 0.00653 & 0.00671 & 0.00671\\
+ & MaF03 & 0.000903 & 0.00258 & \cellcolor{gray95} {\bf 0.000630} & 0.000739\\
+ & MaF04 & 0.0198 & 0.0239 & \cellcolor{gray95} 0.0185 & \cellcolor{gray95} {\bf 0.0180}\\
+ & MaF05 & 0.0330 & \cellcolor{gray95} 0.0189 & 0.0198 & \cellcolor{gray95} {\bf 0.0185}\\
+ & MaF06 & 4.13e-05 & \cellcolor{gray95} {\bf 2.22e-05} & 2.39e-05 & 3.85e-05\\
+ & MaF07 & 0.00275 & 0.00230 & \cellcolor{gray95} {\bf 0.00222} & \cellcolor{gray95} 0.00227\\
+ & MaF08 & 0.00119 & \cellcolor{gray95} {\bf 0.000971} & 0.00104 & 0.00101\\
+ & MaF09 & 0.00157 & 0.00454 & \cellcolor{gray95} 0.00105 & \cellcolor{gray95} {\bf 0.00105}\\
+ & MaF10 & 0.0230 & \cellcolor{gray95} {\bf 0.00394} & 0.00459 & 0.00585\\
+ & MaF11 & 0.0100 & 0.00735 & \cellcolor{gray95} {\bf 0.00653} & 0.00829\\
+ & MaF12 & 0.0201 & \cellcolor{gray95} 0.0100 & 0.0103 & \cellcolor{gray95} {\bf 0.00996}\\
+ & MaF13 & 0.00391 & 0.00125 & \cellcolor{gray95} 0.000902 & \cellcolor{gray95} {\bf 0.000746}\\
+ & MaF14 & \cellcolor{gray95} {\bf 0.00254} & 0.00851 & 0.00379 & 0.00584\\
+ & MaF15 & 0.00402 & 0.0128 & \cellcolor{gray95} {\bf 0.00226} & 0.00534\\
+\hline
+
+\multirow{15}{*}{10} & MaF01 & \cellcolor{gray95} {\bf 0.00276} & \cellcolor{gray95} 0.00284 & 0.00298 & 0.00282\\
+ & MaF02 & 0.00219 & \cellcolor{gray95} 0.00206 & \cellcolor{gray95} 0.00206 & \cellcolor{gray95} {\bf 0.00204}\\
+ & MaF03 & \cellcolor{gray95} {\bf 0.00117} & 1.44e+08 & \cellcolor{gray95} 0.00216 & 264\\
+ & MaF04 & \cellcolor{gray95} {\bf 0.611} & 1.35 & \cellcolor{gray95} 0.649 & 0.720\\
+ & MaF05 & 0.936 & \cellcolor{gray95} {\bf 0.692} & \cellcolor{gray95} 0.735 & 0.974\\
+ & MaF06 & 6.87e-05 & 0.00560 & \cellcolor{gray95} {\bf 2.29e-05} & 0.00349\\
+ & MaF07 & 0.00685 & \cellcolor{gray95} 0.00618 & \cellcolor{gray95} {\bf 0.00606} & 0.00667\\
+ & MaF08 & 0.00222 & \cellcolor{gray95} {\bf 0.00133} & 0.00155 & 0.00139\\
+ & MaF09 & 0.00852 & 0.0318 & \cellcolor{gray95} {\bf 0.00247} & 0.0133\\
+ & MaF10 & 0.0299 & \cellcolor{gray95} {\bf 0.0126} & 0.0166 & 0.0153\\
+ & MaF11 & 0.0238 & \cellcolor{gray95} 0.0198 & \cellcolor{gray95} {\bf 0.0177} & 0.0247\\
+ & MaF12 & 0.0694 & \cellcolor{gray95} 0.0505 & \cellcolor{gray95} {\bf 0.0503} & 0.0541\\
+ & MaF13 & 0.00445 & 0.00150 & 0.00144 & \cellcolor{gray95} {\bf 0.00106}\\
+ & MaF14 & \cellcolor{gray95} {\bf 0.00498} & 0.0289 & \cellcolor{gray95} 0.00592 & 0.0112\\
+ & MaF15 & \cellcolor{gray95} 0.00641 & 0.0651 & \cellcolor{gray95} {\bf 0.00629} & 0.0164\\
+\hline
+
+\multirow{15}{*}{15} & MaF01 & \cellcolor{gray95} 0.00371 & 0.00401 & 0.00420 & \cellcolor{gray95} {\bf 0.00371}\\
+ & MaF02 & \cellcolor{gray95} {\bf 0.00235} & 0.00369 & 0.00249 & \cellcolor{gray95} 0.00237\\
+ & MaF03 & \cellcolor{gray95} {\bf 0.00137} & 1.12e+09 & 0.00248 & 0.00230\\
+ & MaF04 & \cellcolor{gray95} {\bf 19.1} & 44.9 & 22.7 & 24.2\\
+ & MaF05 & 28.3 & \cellcolor{gray95} {\bf 21.2} & \cellcolor{gray95} 22.9 & 29.3\\
+ & MaF06 & 9.76e-05 & 0.0640 & \cellcolor{gray95} {\bf 2.36e-05} & 0.00410\\
+ & MaF07 & 0.0136 & 0.0187 & 0.0130 & \cellcolor{gray95} {\bf 0.0118}\\
+ & MaF08 & 0.00212 & \cellcolor{gray95} {\bf 0.00164} & 0.00199 & 2.42\\
+ & MaF09 & 0.0145 & 0.00621 & \cellcolor{gray95} {\bf 0.00192} & \cellcolor{gray95} 0.00192\\
+ & MaF10 & 0.0377 & \cellcolor{gray95} {\bf 0.0219} & 0.0302 & 0.0259\\
+ & MaF11 & 0.0372 & 0.0544 & \cellcolor{gray95} {\bf 2.70e-05} & 0.0665\\
+ & MaF12 & 0.145 & \cellcolor{gray95} 0.0961 & \cellcolor{gray95} {\bf 0.0947} & 0.104\\
+ & MaF13 & 0.00403 & 0.00165 & 0.00158 & \cellcolor{gray95} {\bf 0.00133}\\
+ & MaF14 & \cellcolor{gray95} {\bf 0.00627} & 0.158 & \cellcolor{gray95} 0.00864 & 0.0127\\
+ & MaF15 & 0.0111 & 0.0792 & \cellcolor{gray95} {\bf 0.00803} & 0.0196\\
+\hline
+\end{tabular}
+\end{footnotesize}
+\end{table}
+\end{document}
