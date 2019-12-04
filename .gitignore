@@ -6,7 +6,7 @@ HV.bin
 IGD.bin
 HV.tex
 IGD.tex
-*.R
+# *.R
 *.pdf
 *.aux
 
